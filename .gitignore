@@ -4,8 +4,8 @@
 .idea/
 .config_secret/
 .media/
-white_board/
-white_board2/
+white_board.py/
+white_board2.py/
 
 # Travis CI
 secrets.tar
