@@ -1,19 +1,13 @@
-def no_continuous(s):
-    l = list(s)
-    nl = []
-    if l:
-        first = l.pop(0)
-        nl.append(first)
-        for n in range(len(l)):
-            item = l.pop(0)
-            if item == nl[-1]:
-                pass
-            else:
-                nl.append(item)
-        return nl
-    else:
-        return nl
+def sum_digit(number):
+    num = number
+    place_value = len(str(num))
+    value = 0
+    for i in reversed(range(place_value)):
+        if i is 0:
+            value += num
+            return value
+        value += num // (10 ** i)
+        num = num % (10 ** i)
 
 # 아래는 테스트로 출력해 보기 위한 코드입니다.
-print( no_continuous( "111333444888822222233333" ))
-
+print("결과 : {}".format(sum_digit(123)));
