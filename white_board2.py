@@ -1,6 +1,4 @@
-list = ["sun", "bed", "car"]
+def number_generator(x, n):
+    return [x * (i + 1) for i in range(n)]
 
-
-
-for i in list:
-    print(i)
+print(number_generator(2, 5))
