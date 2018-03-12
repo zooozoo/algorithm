@@ -1,10 +1,8 @@
-def number_generator(x, n):
-    # 함수를 완성하세요
-    l = []
+def nextSqure(n):
+    result = 'no'
     for i in range(n):
-        item = x * (i +1)
-        l.append(item)
-    return l
-
+        if n // (i + 1) == (i + 1) and n % (i + 1) == 0:
+            result = ((i + 1) + 1) ** 2
+    return result
 # 아래는 테스트로 출력해 보기 위한 코드입니다.
-print(number_generator(2,5))
+print("결과 : {}".format(nextSqure(4)));

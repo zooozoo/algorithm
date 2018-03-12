@@ -19,3 +19,9 @@
 [programers-2018-03-05.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-05.md)
 
 [programers-2018-03-06.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-06.md)
+
+[programers-2018-03-07.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-07.md)
+
+[programers-2018-03-08.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-08.md)
+
+[programers-2018-03-12.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-12.md)
