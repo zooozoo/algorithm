@@ -1,4 +1,3 @@
-def number_generator(x, n):
-    return [x * (i + 1) for i in range(n)]
-
-print(number_generator(2, 5))
+s = '01033334444'
+print(s[:-4])
+print(s[-4:])
