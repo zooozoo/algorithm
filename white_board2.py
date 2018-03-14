@@ -1,3 +1,6 @@
-s = '01033334444'
-print(s[:-4])
-print(s[-4:])
+string = ["Queen", "Tod", "Kim"]
+
+for i in string:
+    if i == "Kim":
+        print(i)
+        print(string.index(i))
