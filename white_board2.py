@@ -1,6 +1,5 @@
-string = ["Queen", "Tod", "Kim"]
+word = '수박'
 
-for i in string:
-    if i == "Kim":
-        print(i)
-        print(string.index(i))
+n = 5
+
+print(type(int(n/5)))
