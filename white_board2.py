@@ -1,5 +1,11 @@
-word = '수박'
+s = 'pPoooyY'
+p = []
+y = []
+for i in s:
+    if i.lower() == 'p':
+        p.append(i)
+    if i.lower() == 'y':
+        y.append(i)
 
-n = 5
-
-print(type(int(n/5)))
+print(s.lower().count('p'))
+print(s.lower().count('y'))

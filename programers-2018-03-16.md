@@ -36,7 +36,7 @@ def water_melon(n):
 
 ```
 
-### 다른 풀이1
+### 다른 풀이2
 ```python
 def water_melon(n):
     # 함수를 완성하세요.

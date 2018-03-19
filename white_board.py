@@ -1,12 +1,17 @@
-def water_melon(n):
-    # 함수를 완성하세요.
-    word = '수박'
-    if n % 2 == 0:
-        return word*(int(n/2))
-    num = int((n-1)/2)
-    return (word*num)+word[0]
+def numPY(s):
+    # 함수를 완성하세요
+    p = []
+    y = []
+    for i in s:
+        if i.lower() == 'p':
+            p.append(i)
+        if i.lower() == 'y':
+            y.append(i)
+    if len(p) == len(y):
+        return True
+    return False
 
 
-# 실행을 위한 테스트코드입니다.
-print("n이 3인 경우: " + water_melon(3));
-print("n이 4인 경우: " + water_melon(4));
+# 아래는 테스트로 출력해 보기 위한 코드입니다.
+print(numPY("pPoooyY"))
+print(numPY("Pyy"))
