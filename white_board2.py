@@ -1,9 +1,3 @@
-d = {"김철수":78, "이하나":97, "정진원":88}
+list = [5,3,4]
 
-l = []
-for k, v in d.items():
-    l.append((k, v))
-
-print(sorted(l, key=lambda x: x[0]))
-
-print(type(d.items()))
+print(sum(i for i in list)/len(list))
