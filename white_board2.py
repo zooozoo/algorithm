@@ -1,3 +1,3 @@
-list = [5,3,4]
+n = 123
 
-print(sum(i for i in list)/len(list))
+print(n/10)
