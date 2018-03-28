@@ -1,25 +1,38 @@
-result = [i for i in range(2, 11)]
+test_number = 6
 
-for i in range(10):
-    item = i +1
-    print(f'{i+1} is item ')
-    for a in range(2, item):
-        if item % a == 0:
-            print(f'item={item}, a={a}')
-            result.remove(item)
-            break
-
-print(result)
-
-# for i in range(10):
-#     item = i + 1
-#     for a in range(10):
-#         if (a + 1) == 1 or (a + 1) == item:
-#             print('1또는 자기 자신')
-#         if item % (a + 1) == 0:
-#             print(a + 1)
-#             pass
-#         result.append(item)
+count = 0
 
 
+# for i in range(500):
+#     if test_number == 1:
+#         break
+#     count += 1
+#     if test_number % 2 == 0:
+#         test_number = test_number /2
+#     else:
+#         test_number = (test_number * 3) + 1
+# else:
+#     count = -1
 
+
+while count <= 10:
+    count += 1
+    print(count)
+
+
+# while count <= 500:
+#     if test_number == 1:
+#         break
+#     count += 1
+#     if test_number % 2 == 0:
+#         test_number = test_number / 2
+#     else:
+#         test_number = (test_number * 3) + 1
+# else:
+#     count = -1
+
+
+
+
+
+#홀수 짝수 판별법은 2로 나눴을 때 나머지가 생기는지 안생기는지 여부로 확인

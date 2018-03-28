@@ -43,3 +43,5 @@
 [programers-2018-03-26.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-26.md)
 
 [programers-2018-03-27.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-27.md)
+
+[programers-2018-03-28.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-28.md)
