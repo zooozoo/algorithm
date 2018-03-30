@@ -1,19 +1,12 @@
-def collatz(num):
-    test_number = num
+def getMinSum(A,B):
     answer = 0
-
-    while answer < 500:
-        if test_number == 1:
-            break
-        answer += 1
-        if test_number % 2 == 0:
-            test_number = test_number / 2
-        else:
-            test_number = (test_number * 3) + 1
-    else:
-        answer = -1
-
+    A.sort()
+    B.sort(reverse=True)
+    print(A)
+    for i in range(len(A)):
+        answer += A[i] * B[i]
     return answer
 
-# 아래는 테스트로 출력해 보기 위한 코드입니다.
-print(collatz(6))
+#아래 코드는 출력을 위한 테스트 코드입니다.
+
+print(getMinSum([1,2,3],[4,5,6]))
