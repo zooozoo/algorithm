@@ -1,46 +1,26 @@
-s = '''[programers-2017-10-10.md](https://github.com/zooozoo/algorithm/blob/master/programers-2017-10-10.md)
+s = "맛토마토있어"
+length = 0
 
-[programers-2017-10-12.md](https://github.com/zooozoo/algorithm/blob/master/programers-2017-10-12.md)
 
-[programers-2017-10-13.md](https://github.com/zooozoo/algorithm/blob/master/programers-2017-10-13.md)
+for i in range(3, len(s)+1):
+    # print('i ---------------------- :', i)
+    for a in range(len(s)-i+1):
+        part = s[a:a + i]
+        rev_part = part[::-1]
+        if part == rev_part:
+            if length < len(part):
+                length = len(part)
+        # print(s[a:a+i])
+        # print(rev_part)
+        # print(f'a = {a}, i+a = {i+a}')
 
-[programers-2018-02-28.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-02-28.md)
 
-[programers-2018-03-01.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-01.md)
 
-[programers-2018-03-02.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-02.md)
 
-[programers-2018-03-05.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-05.md)
+def longest_palindrom(s):
+    # 함수를 완성하세요
+    return len(s) if s[::-1] == s else max(longest_palindrom(s[:-1]), longest_palindrom(s[1:]))
 
-[programers-2018-03-06.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-06.md)
 
-[programers-2018-03-07.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-07.md)
+# 아래는 테스트로 출력해 보기 위한 코드입니다.
 
-[programers-2018-03-08.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-08.md)
-
-[programers-2018-03-12.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-12.md)
-
-[programers-2018-03-13.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-13.md)
-
-[programers-2018-03-14.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-14.md)
-
-[programers-2018-03-16.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-16.md)
-
-[programers-2018-03-19.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-19.md)
-
-[programers-2018-03-20.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-20.md)
-
-[programers-2018-03-22.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-22.md)
-
-[programers-2018-03-23.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-23.md)
-
-[programers-2018-03-26.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-26.md)
-
-[programers-2018-03-27.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-27.md)
-
-[programers-2018-03-28.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-28.md)
-
-[programers-2018-03-29.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-03-29.md)'''
-
-for i in s.split('\n')[::-1]:
-    print(i)
