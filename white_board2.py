@@ -1,23 +1,31 @@
-def adder(a, b):
-    if a < b :
-        result = 0
-        for i in range(a,b+1):
-            result += i
-        return result
-    elif b < a :
-        result = 0
-        for i in range(b, a+1):
-            result += i
-        return result
-    else:
-        return a
+import datetime
+
+d = {
+    1:31,
+    2:28,
+    3:31,
+    4:30,
+    5:31,
+    6:30,
+    7:31,
+    8:31,
+    9:30,
+    10:31,
+    11:30,
+    12:31
+}
+
+nd = {1: 31, 2: 59, 3: 90, 4: 120, 5: 151, 6: 181, 7: 212, 8: 243, 9: 273, 10: 304, 11: 334, 12: 365}
+
+nd2 = {1: 0, 2: 31, 3: 59, 4: 90, 5: 120, 6: 151, 7: 181, 8: 212, 9: 243, 10: 273, 11: 304, 12: 334}
+days = ['THU','FRI','SAT','SUN','MON','TUE','WED']
+a = 5
+b = 24
+
+total = (nd2[a] +24) % 7
+print(total)
+print(days[total+1])
+
+print(datetime.datetime(2016, a, b).weekday())
 
 
-
-
-print(adder(3,5))
-
-
-
-# for i in range(3, 5):
-#     print(i)

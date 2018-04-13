@@ -4,7 +4,11 @@
 
 내 답변과 다른 사람이 해결해 놓은 신박한 답변을 기록해 놓은 저장소 입니다.
 
-[programers-2018-04-09.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-04-09.md)
+[programers-2018-04-13.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-04-13.md)
+
+[programers-2018-04-12.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-04-12.md)
+
+[programers-2018-04-05.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-04-05.md)
 
 [programers-2018-04-04.md](https://github.com/zooozoo/algorithm/blob/master/programers-2018-04-04.md)
 
