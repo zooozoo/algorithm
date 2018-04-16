@@ -1,16 +1,20 @@
-def toWeirdCase(s):
-    # 함수를 완성하세요
-    word_list = s.split()
-    result_list = []
-    for word in word_list:
-        nw = ''
-        for w_sequence in range(len(word)):
-            if w_sequence == 0 or w_sequence % 2 == 0:
-                nw += word[w_sequence].capitalize()
-            else:
-                nw += word[w_sequence].lower()
-        result_list.append(nw)
-    return ' '.join(result_list)
+def noOvertime(n, works):
+    while n > 0:
+        highest = max(works)
+        new = works.pop(works.index(highest)) - 1
+        n -= 1
+        works.append(new)
+    result = 0
+    for i in works:
+        result += i ** 2
+    return result
 
-# 아래는 테스트로 출력해 보기 위한 코드입니다.
-print("결과 : {}".format(toWeirdCase("try hello world")));
+# 퇴근까지 남은 시간 : 26, 남은 일의 작업량 : [15, 12, 11, 15, 8, 8, 15, 12, 8, 8]
+# 야근 지수를 최소화 하기 위해 일한 결과 : [9, 9, 9, 9, 8, 8, 9, 9, 8, 8]
+
+# 퇴근까지 남은 시간 : 8, 남은 일의 작업량 : [9, 6, 11, 15, 5, 6]
+# 야근 지수를 최소화 하기 위해 일한 결과 : [9, 6, 9, 9, 5, 6]
+
+
+
+print(noOvertime(8, [9, 6, 11, 15, 5, 6]))
