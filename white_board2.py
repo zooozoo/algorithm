@@ -1,31 +1,18 @@
-import datetime
+def toWeirdCase(s):
+    # 함수를 완성하세요
+    seq =0
+    answer = ''
+    for a in s:
+        if a == ' ':
+            seq = 0
+            answer += ' '
+            continue
+        elif seq == 0 or seq % 2 == 0:
+            answer += a.capitalize()
+        else:
+            answer += a.lower()
+        seq += 1
+    return answer
 
-d = {
-    1:31,
-    2:28,
-    3:31,
-    4:30,
-    5:31,
-    6:30,
-    7:31,
-    8:31,
-    9:30,
-    10:31,
-    11:30,
-    12:31
-}
-
-nd = {1: 31, 2: 59, 3: 90, 4: 120, 5: 151, 6: 181, 7: 212, 8: 243, 9: 273, 10: 304, 11: 334, 12: 365}
-
-nd2 = {1: 0, 2: 31, 3: 59, 4: 90, 5: 120, 6: 151, 7: 181, 8: 212, 9: 243, 10: 273, 11: 304, 12: 334}
-days = ['THU','FRI','SAT','SUN','MON','TUE','WED']
-a = 5
-b = 24
-
-total = (nd2[a] +24) % 7
-print(total)
-print(days[total+1])
-
-print(datetime.datetime(2016, a, b).weekday())
-
-
+# 아래는 테스트로 출력해 보기 위한 코드입니다.
+print("결과 : {}".format(toWeirdCase("try hello world")));
