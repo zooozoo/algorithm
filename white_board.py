@@ -1,74 +1,25 @@
-def nlcm(num):
-    def gcd(a, b):
-        while (b != 0):
-            temp = a % b
-            a = b
-            b = temp
-        return abs(a)
 
-    # 최소공배수 구하는 함수
-    def lcm(a, b):
-        gcd_value = gcd(a, b)
-        if gcd_value == 0:
-            return 0
-        return a * b // gcd(a, b)
+def even_fibo(number):
+    fibo_l = []
+    result_l = []
+    latest_fibo_num = 0
+    roop = 1
+    while latest_fibo_num < number:
+        if roop == 1:
+            fibo_l.append(0)
+            roop += 1
+            continue
+        if roop == 2:
+            fibo_l.append(1)
+            latest_fibo_num = 1
+            roop += 1
+            continue
+        latest_fibo_num = fibo_l[-1] + fibo_l[-2]
+        fibo_l.append(latest_fibo_num)
+        if latest_fibo_num % 2 == 0:
+            result_l.append(latest_fibo_num)
+        roop += 1
+    print(fibo_l)
+    print(result_l)
 
-    for i in range(len(num) - 1):
-        a = num.pop(0)
-        b = num.pop(0)
-        num.append(lcm(a, b))
-
-    return num[0]
-
-
-# 아래는 테스트로 출력해 보기 위한 코드입니다.
-print(nlcm([2, 6, 8, 14]))
-print(nlcm([12, 11, 38, 54, 47, 47, 53, 80, 42, 18]))
-
-
-
-
-# def nlcm(num):
-#     answer = 0
-#     max_number = max(num)
-#     iterate_num = 1
-#     while True:
-#         result = True
-#         for i in num:
-#             if max_number * iterate_num % i != 0:
-#                 result = False
-#                 break
-#         else:
-#             answer = max_number * iterate_num
-#             break
-#         iterate_num += 1
-#     return answer
-#
-#
-# # 아래는 테스트로 출력해 보기 위한 코드입니다.
-# print(nlcm([2, 6, 8, 14]))
-
-# 최소공배수 구하는 공식 http://math7.tistory.com/145
-
-
-
-# def nlcm(num):
-#     answer = 0
-#     max_number = max(num)
-#     num.remove(max_number)
-#     iterate_num = 1
-#     while True:
-#         result = True
-#         for i in num:
-#             if max_number*iterate_num % i != 0:
-#                 result = False
-#         if result == True:
-#             answer = max_number*iterate_num
-#             break
-#         print(f'iterate_num {iterate_num}')
-#         iterate_num += 1
-#     return answer
-
-#
-# # 아래는 테스트로 출력해 보기 위한 코드입니다.
-# print(nlcm([12, 11, 38, 54, 47, 47, 53, 80, 42, 18]))
+even_fibo(2)
