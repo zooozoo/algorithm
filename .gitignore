@@ -2,8 +2,6 @@
 
 # Custom
 .idea/
-.config_secret/
-.media/
 white_board*.py/
 
 # Travis CI
