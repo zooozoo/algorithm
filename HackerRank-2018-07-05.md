@@ -1,4 +1,4 @@
-![problem](https://zooozoo.github.io/assets/images/hackerrank/hackerRank-2018-07-05.pdf)
+![problem](hackeRank-problem/hackerRank-2018-07-05.jpg)
 
 Arrays: Left Rotation
 A left rotation operation on an array of size shifts each of the array's elements unit to the left. For
