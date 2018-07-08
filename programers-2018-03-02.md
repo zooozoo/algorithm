@@ -23,6 +23,8 @@ def strToInt(str):
     result = 0
 
     for idx, number in enumerate(str[::-1]):
+        # str을 거꾸로 순회하기 때문에 if문은 가장 앞쪽의 부호 부분이 되며 
+        # 음수일 경우 -1을 곱해서 음수로 만들어
         if number == '-':
             result *= -1
         else:
@@ -50,7 +52,42 @@ def strToInt(str):
         result= -strToInt(str[1:])
     return result
 
-
+줌
 # 아래는 테스트로 출력해 보기 위한 코드입니다.
 print(strToInt("-1234"));
+```
+
+### enumerate()메서드
+점프투 파이썬에 나온 설명 [링크](https://wikidocs.net/32#enumerate)
+
+enumerate는 "열거하다"라는 뜻이다. 
+이 함수는 순서가 있는 자료형(리스트, 튜플, 문자열)을 입력으로 받아 
+인덱스 값을 포함하는 enumerate 객체를 리턴한다.
+
+※ 보통 enumerate 함수는 아래 예제처럼 for문과 함께 자주 사용된다.
+
+```python
+>>> for i, name in enumerate(['body', 'foo', 'bar']):
+...     print(i, name)
+...
+0 body
+1 foo
+2 bar
+```
+순서값과 함께 body, foo, bar가 순서대로 출력되었다. 
+즉, 위 예제와 같이 enumerate를 for문과 함께 사용하면 
+자료형의 현재 순서(index)와 그 값을 쉽게 알 수 있다.
+
+for문처럼 반복되는 구간에서 객체가 현재 어느 위치에 있는지 알려주는 인덱스 값이 필요할때 
+enumerate 함수를 사용하면 매우 유용하다.
+
+### pow()메서드
+점프투 파이썬에 나온 설명 [링크](https://wikidocs.net/32#pow)
+
+pow(x, y)는 x의 y 제곱한 결과값을 리턴하는 함수이다.
+```python
+>>> pow(2, 4)
+16
+>>> pow(3, 3)
+27
 ```

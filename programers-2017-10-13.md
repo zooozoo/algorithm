@@ -6,7 +6,7 @@ mylist 에서 가장 작은 수를 제거한 리스트를 리턴하고, mylist�
 
 ### 내 풀이
 
-```
+```python
 def rm_small(mylist):
     smallest = mylist[0]
     index_num = 0
@@ -24,7 +24,7 @@ print("결과 {} ".format(rm_small(my_list)))
 ```
 
 ### 다른 풀이1
-```
+```python
 def rm_small(mylist):
     return [i for i in mylist if i > min(mylist)]
 
@@ -34,7 +34,7 @@ print("결과 {} ".format(rm_small(my_list)))
 ```
 
 ### 다른 풀이2
-```
+```python
 def rm_small(mylist):
     # 함수를 완성하세요
     mylist.remove(min(mylist))
@@ -44,3 +44,7 @@ def rm_small(mylist):
 my_list = [4,3,2,1]
 print("결과 {} ".format(rm_small(my_list)))
 ```
+
+점프 투 파이썬 의 `remove()`메서드에 대한 설명 [링크](https://wikidocs.net/14#remove)
+* remove(x)는 리스트에서 첫 번째로 나오는 x를 삭제하는 함수이다.
+

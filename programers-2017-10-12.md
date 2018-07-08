@@ -11,6 +11,7 @@ printTriangle이 return하는 String은 개행문자('\n')로 끝나야 합니�
 *
 **
 ***
+
 높이가 5일때
 
 *
@@ -21,7 +22,7 @@ printTriangle이 return하는 String은 개행문자('\n')로 끝나야 합니�
 ```
 
 ### 내 풀이
-```
+```python
 def printTriangle(num):
     s = ''
     for i in range(num+1):
@@ -36,7 +37,7 @@ print( printTriangle(3) )
 ```
 
 ### 다른 풀이1
-```
+```python
 def printTriangle(num):
     return ''.join(['*'*i + '\n' for i in range(1,num+1)])
 
@@ -46,7 +47,7 @@ print( printTriangle(3) )
 ```
 
 ### 다른 풀이2
-```
+```python
 def printTriangle(num):
     s = ""
     for row in range(1, num+1):

@@ -5,7 +5,7 @@ num은 0이상의 정수이며, num이 음수인 경우는 없습니다.
 
 
 ### 내 풀이
-```
+```python
 def evenOrOdd(num):
     if num % 2 == 0:
         s = 'Even'
@@ -21,7 +21,7 @@ print("결과 : " + evenOrOdd(2))
 ```
 
 ### 다른 풀이
-```
+```python
 def evenOrOdd(num):
     return num % 2 and "Odd" or "Even"
 
