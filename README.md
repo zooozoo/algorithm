@@ -4,6 +4,12 @@
 
 내 답변과 다른 사람이 해결해 놓은 신박한 답변을 기록해 놓은 저장소 입니다.
 
+[HackerRank-2018-07-14.md](https://github.com/zooozoo/algorithm/blob/master/HackerRank-2018-07-14.md)
+
+[HackerRank-2018-07-11.md](https://github.com/zooozoo/algorithm/blob/master/HackerRank-2018-07-11.md)
+
+[HackerRank-2018-07-06.md](https://github.com/zooozoo/algorithm/blob/master/HackerRank-2018-07-06.md)
+
 [HackerRank-2018-07-05.md](https://github.com/zooozoo/algorithm/blob/master/HackerRank-2018-07-05.md)
 
 [everyday-programmig-2018-07-03.md](https://github.com/zooozoo/algorithm/blob/master/everyday-programmig-2018-07-03.md)
